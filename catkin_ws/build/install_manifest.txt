@@ -1,0 +1,10 @@
+/home/pi/catkin_ws/install/_setup_util.py
+/home/pi/catkin_ws/install/env.sh
+/home/pi/catkin_ws/install/setup.bash
+/home/pi/catkin_ws/install/setup.sh
+/home/pi/catkin_ws/install/setup.zsh
+/home/pi/catkin_ws/install/.rosinstall
+/home/pi/catkin_ws/install/lib/pkgconfig/becker.pc
+/home/pi/catkin_ws/install/share/becker/cmake/beckerConfig.cmake
+/home/pi/catkin_ws/install/share/becker/cmake/beckerConfig-version.cmake
+/home/pi/catkin_ws/install/share/becker/package.xml

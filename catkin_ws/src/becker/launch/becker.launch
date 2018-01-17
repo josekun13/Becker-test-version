@@ -1,0 +1,15 @@
+<launch>
+	<node pkg="becker" type="imunode" name="imunode" >
+	</node>
+	<node pkg="becker" type="encodernode" name="encodernode" >
+	</node>
+	<node pkg="becker" type="motornode" name="motornode" >
+	</node>
+	<node pkg="becker" type="control1node" name="control1node" >
+		<param name="ki" value="-0.7071" />
+		<param name="kf0" value="-1.3933" />
+		<param name="kf1" value="-74.2680" />
+		<param name="kf2" value="-1.6141" />
+		<param name="kf3" value="-1.3836" />
+	</node>
+</launch>

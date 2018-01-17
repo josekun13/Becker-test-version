@@ -25,13 +25,13 @@
 import rospy 
 from std_msgs.msg import String
 from gpiozero import Motor
-from time import sleep 
 from gpiozero import PWMLED
+from decimal import Decimal
 
-motor = Motor(forward=4, backward=14)
-led=PWMLED(17,active_high=1,initial_value=0,frequency=1000)
+motor = Motor(forward=12, backward=16)
+led=PWMLED(20,active_high=1,initial_value=0,frequency=2000)
 motor1 = Motor(forward=27, backward=22)
-led1=PWMLED(18,active_high=1,initial_value=0,frequency=1000)
+led1=PWMLED(21,active_high=1,initial_value=0,frequency=2000)
 
 def pwmanddir(data):
 	m= data.data

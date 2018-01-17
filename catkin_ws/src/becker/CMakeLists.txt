@@ -8,11 +8,14 @@ find_package(catkin REQUIRED COMPONENTS
   roscpp
   rospy
   std_msgs
+  message_generation
 )
+FIND_LIBRARY(WIRINGPI_LIBRARY wiringPi /usr/include/wiringPi)
+#FIND_LIBRARY(SOFTPWM_LIBRARY softPwm  /usr/include/softPwm)
+
 
 ## System dependencies are found with CMake's conventions
 # find_package(Boost REQUIRED COMPONENTS system)
-
 
 ## Uncomment this if the package has a setup.py. This macro ensures
 ## modules and global scripts declared therein get installed
@@ -44,11 +47,12 @@ find_package(catkin REQUIRED COMPONENTS
 ##   * add every package in MSG_DEP_SET to generate_messages(DEPENDENCIES ...)
 
 ## Generate messages in the 'msg' folder
-# add_message_files(
-#   FILES
-#   Message1.msg
-#   Message2.msg
-# )
+add_message_files(
+   FILES
+   wheelpos.msg
+   imumsg.msg
+   controlmv.msg
+ )
 
 ## Generate services in the 'srv' folder
 # add_service_files(
@@ -65,10 +69,10 @@ find_package(catkin REQUIRED COMPONENTS
 # )
 
 ## Generate added messages and services with any dependencies listed here
-# generate_messages(
-#   DEPENDENCIES
-#   std_msgs
-# )
+ generate_messages(
+  DEPENDENCIES
+   std_msgs
+)
 
 ################################################
 ## Declare ROS dynamic reconfigure parameters ##
@@ -100,10 +104,10 @@ find_package(catkin REQUIRED COMPONENTS
 ## CATKIN_DEPENDS: catkin_packages dependent projects also need
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
-#  INCLUDE_DIRS include
-#  LIBRARIES becker
-#  CATKIN_DEPENDS roscpp rospy std_msgs
-#  DEPENDS system_lib
+  INCLUDE_DIRS include
+  LIBRARIES becker
+  CATKIN_DEPENDS message_runtime roscpp rospy std_msgs
+  DEPENDS system_lib
 )
 
 ###########
@@ -112,7 +116,7 @@ catkin_package(
 
 ## Specify additional locations of header files
 ## Your package locations should be listed before other locations
-# include_directories(include)
+ include_directories(include)
 include_directories(
   ${catkin_INCLUDE_DIRS}
 )
@@ -131,7 +135,7 @@ include_directories(
 # add_executable(becker_node src/becker_node.cpp)
 
 ## Add cmake target dependencies of the executable
-## same as for the library above
+## same as for the library aboveiringPi.
 # add_dependencies(becker_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
 ## Specify libraries to link a library or executable target against
@@ -186,3 +190,38 @@ include_directories(
 
 ## Add folders to be run by python nosetests
 # catkin_add_nosetests(test)
+
+##Declare a catkin_package
+#catkin_package(
+#  CATKIN_DEPENDS message_runtime
+#)
+
+##Build talker and listener
+#include_directories(include ${catkin_INCLUDE_DIRS})
+
+#add_executable(conpidnode src/conpidnode.cpp)
+#target_link_libraries(conpidnode ${catkin_LIBRARIES})
+#add_dependencies(conpidnode becker_generate_messages_cpp)
+
+include_directories(include ${catkin_INCLUDE_DIRS})
+
+add_executable(encodernode src/encodernode.cpp)
+target_link_libraries(encodernode ${catkin_LIBRARIES} ${WIRINGPI_LIBRARY})
+add_dependencies(encodernode becker_generate_messages_cpp)
+
+add_executable(imunode src/imunode.cpp)
+target_link_libraries(imunode ${catkin_LIBRARIES} ${WIRINGPI_LIBRARY})
+add_dependencies(imunode becker_generate_messages_cpp)
+
+add_executable(motornode src/motornode.cpp)
+target_link_libraries(motornode ${catkin_LIBRARIES} ${WIRINGPI_LIBRARY})
+add_dependencies(motornode becker_generate_messages_cpp)
+
+add_executable(control1node src/control1node.cpp)
+target_link_libraries(control1node ${catkin_LIBRARIES})
+add_dependencies(control1node becker_generate_messages_cpp)
+
+add_executable(control2node src/control2node.cpp)
+target_link_libraries(control2node ${catkin_LIBRARIES})
+add_dependencies(control2node becker_generate_messages_cpp)
+

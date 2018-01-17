@@ -1,0 +1,72 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+#
+#  conpidnode.py
+#  
+#  Copyright 2016  <pi@raspberrypi>
+#  
+#  This program is free software; you can redistribute it and/or modify
+#  it under the terms of the GNU General Public License as published by
+#  the Free Software Foundation; either version 2 of the License, or
+#  (at your option) any later version.
+#  
+#  This program is distributed in the hope that it will be useful,
+#  but WITHOUT ANY WARRANTY; without even the implied warranty of
+#  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#  GNU General Public License for more details.
+#  
+#  You should have received a copy of the GNU General Public License
+#  along with this program; if not, write to the Free Software
+#  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
+#  MA 02110-1301, USA.
+#  
+#  
+import rospy
+from std_msgs.msg import String
+import math
+pro = 4828.99195598078
+ite = 2193809.54133445
+der = -0.22394749811869
+acu = 0.0
+ant = 0.0
+
+def pid(data):
+	m= data.data
+	ang=float(m)
+	#if ang<0.1 and ang>-0.1:
+	#	ang = 0.0
+	#ang=-ang
+	pub = rospy.Publisher('controlmv', String, queue_size=2)
+	global acu
+	acu=(acu+ang)
+	global ant
+	sal=-int(pro*ang+ite*acu+der*((ang-ant)/0.02))
+	ant=ang
+	if sal<0.0:
+		dire=0
+		sal=-sal
+	else:
+		dire=1
+	sal1=sal*.01
+	if sal1>1.0:
+		sal1=1.0
+	salida= str(dire) + " " + str(sal1) + " " + str(dire) + " "  + str(sal1)
+	pub.publish(salida)
+
+
+
+
+
+def conpidnode():
+	rospy.init_node('conpidnode',  anonymous=True)
+	rospy.Subscriber("imumsg" ,String, pid)
+	rospy.spin()
+
+
+if __name__ == '__main__':
+	try:
+		conpidnode()
+	except rospy.ROSInterruptException:
+		pass
+
+

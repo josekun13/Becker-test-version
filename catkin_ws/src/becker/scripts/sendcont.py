@@ -28,13 +28,16 @@ from std_msgs.msg import String
 def sendcont():
 	pub = rospy.Publisher('controlmv', String, queue_size=10)
 	rospy.init_node('sendcont', anonymous=True)
-	rate = rospy.Rate(10)
+	rate = rospy.Rate(8)
 	while not rospy.is_shutdown():
-		control_str="1 0.5 1 0.5"
+		control_str="1 1.0 1 1.0"
 		rospy.loginfo(control_str)
 		pub.publish(control_str)
 		rate.sleep()
-	
+		control_str="0 1.0 0 1.0"
+		rospy.loginfo(control_str)
+		pub.publish(control_str)
+		rate.sleep()
 
 
 if __name__ == '__main__':
