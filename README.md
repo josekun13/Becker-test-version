@@ -1,3 +1,9 @@
 # Becker-test-version
-el area de tabajo de ROS que utiliza el robot Becker
-esta es una version de prueba, mas documentacion se proveera conforme avanze el proyecto
+The purpose of this robot is to test and develop human-robot interaction applications,
+also control models for non-linear systems.
+##Introduction
+##Structure
+##Electronics
+##Simulation
+##R.O.S.
+
