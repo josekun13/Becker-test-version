@@ -1,8 +1,9 @@
 # Becker-test-version
-The purpose of this robot is to test and develop human-robot interaction applications,
-also control models for non-linear systems.
+The purpose of this robot is to test and develop human-robot interaction
+applications, also control models for non-linear systems.
 ## Introduction
-
+R.Becker :cat: is an inverted pendulum on two wheels, the idea of this 
+design is 
 ## Structure
 ### Characteristics
 ## Electronics
