@@ -6,7 +6,7 @@ R.Becker :smiley_cat: is an inverted pendulum on two wheels, the idea of
 this kind of design is the dynamically stable robots are inherently safe 
 to work in human environments.
 
-<img class="special-img-class" style="width:25%" src="/Images/basica.jpg" />
+<img src="/Images/basica.jpg" style="width:30%;">
 Inverted pendulum on two wheels
 
 The inverted pendulum is the simplest version of an dynamically stable 
@@ -15,7 +15,7 @@ robot.
 The operation of Becker consist in an IMU that measure the inclination
 angle, a control module and two DC. motors that correct the disturbances
 
-<img class="special-img-class" style="width:25%" src="/Images/PSIBecker.png" />
+<img src="/Images/PSIBecker.png" style="width:30%;">
 
 
 
