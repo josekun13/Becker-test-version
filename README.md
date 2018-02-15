@@ -23,16 +23,14 @@ disturbances.
 The shape of the robot consist in a base with a column in the middle, in 
 the base are two axis that connect the wheels with the motors, the axis
 are support by two ball bearings each one.
-
+/play secret
 <img src="/Images/Becker.jpg" width="300">
 
-The parts of Becker are.
+### Characteristics
 * Column
 * Base
 * Ball bearing base
 * Axis
-
-### Characteristics
 ## Electronics
 ### Power Source
 ### Control Unit
