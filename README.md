@@ -27,10 +27,10 @@ are support by two ball bearings each one.
 <img src="/Images/Becker.jpg" width="300">
 
 The parts of Becker are.
-*Column
-*Base
-*Ball bearing base
-*Axis
+* Column
+* Base
+* Ball bearing base
+* Axis
 
 ### Characteristics
 ## Electronics
