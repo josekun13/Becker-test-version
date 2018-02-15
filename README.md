@@ -23,14 +23,22 @@ disturbances.
 The shape of the robot consist in a base with a column in the middle, in 
 the base are two axis that connect the wheels with the motors, the axis
 are support by two ball bearings each one.
-/play secret
+
 <img src="/Images/Becker.jpg" width="300">
 
 ### Characteristics
 * Column
+Is a 20X20 aluminium IPS with one meter length.
 * Base
+Is an aluminium plate of 1/4 inches (6.35mm) with a size of 20cm x 60cm.
 * Ball bearing base
+Is a square print in PLA with a density of 75% and an hexagonal pattern,
+it fits a ball bearing 1/4" x 5/8".
 * Axis
+they are made of stainless steel with a length  of 12cm.
+
+*3d models and planes are in the ![models folder](/models)*
+ 
 ## Electronics
 ### Power Source
 ### Control Unit
