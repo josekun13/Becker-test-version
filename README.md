@@ -7,7 +7,7 @@ this kind of design is the dynamically stable robots are inherently safe
 to work in human environments.
 
 <img src="/Images/basica.jpg" width="250">
-Inverted pendulum on two wheels
+*Inverted pendulum on two wheels*
 
 The inverted pendulum is the simplest version of an dynamically stable 
 robot.
