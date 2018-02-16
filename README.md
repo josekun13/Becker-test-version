@@ -46,7 +46,7 @@ Electronic system is composed by three main parts
 * Control Unit
 * Power Stage
 
-<img src="/Images/DG.jpg" width="300">
+<img src="/Images/DG.jpg" width="400">
 
 ### Power Source
 ### Control Unit
