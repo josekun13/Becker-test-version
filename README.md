@@ -10,7 +10,7 @@ to work in human environments.
 
 *Inverted pendulum on two wheels*
 
-The inverted pendulum is the simplest version of an dynamically stable 
+The inverted pendulum is the simplest version of a dynamically stable 
 robot.
 
 The operation of Becker consist in an IMU that measure the inclination
