@@ -41,6 +41,13 @@ they are made of stainless steel with a length  of 12cm.
 *3d models and planes are in the ![models folder](/models)*
  
 ## Electronics
+Electronic system is composed by three main parts 
+* Power Source
+* Control Unit
+* Power Stage
+
+<img src="/Images/DG.jpg" width="300">
+
 ### Power Source
 ### Control Unit
 ### Power Stage
