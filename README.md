@@ -48,9 +48,36 @@ Electronic system is composed by three main parts
 
 <img src="/Images/DG.jpg" width="400">
 
-### Power Source
-### Control Unit
-### Power Stage
+### Power Source   :battery:
+Becker is powered by two batteries, one for the control system and the 
+other for the motors. this is in order to avoid interference caused by
+the motors in the control system.
+
+The control system battery have a charge capacity of 10,000 mAh with
+and output of 5V 2A, the battery use an USB port to as terminal.
+
+The motors battery is a 5000mAh LiPo with an output of 11.1v and a 
+maximum discharge rate of 50A.
+
+### Control Unit  :computer:
+Becker use a Raspberry Pi B2+ as CPU, IMU are communicated using I²C, 
+Encoders, PWM and direction pins of the motor drivers are conected to 
+GPIOs of the CPU (throught optocouplers).
+
+### Power Stage  :low_brightness:
+It's made of two parts, the first is the motor drivers, and the second 
+is an optocoupler array.
+
+Motor drivers (VHN5019) function is to provide enough curren to motors,
+their logic circuit work at 5V, they are supply by a buck type source.
+
+Optocoupler array function is to isolate the motor circuit and the 
+control circuit.
+
+*Electronic diagrams are in the ![diagrams folder](/diagrams)*
+
+
+
 ## Simulation
 ### Dynamic Model
 ### Control System 
