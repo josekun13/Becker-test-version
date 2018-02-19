@@ -76,11 +76,25 @@ control circuit.
 
 *Electronic diagrams are in the ![diagrams folder](/diagrams)*
 
-
-
 ## Simulation
+Becker dynamic model simulation was made using matlab.
+
 ### Dynamic Model
+The dynamic model of becker is an inverted pendulum considering that 
+it's behavior is linear near vertical stability point.
+
+The model equations and space state analysis are explained in detail in
+the thesis "Desarrollo de un robot de dos ruedas dinámicamente estable"
+the document is in the ![documents folder](/documents).
+
+Dynamic model diagram in SimuLink is as follows.
+<img src="/Images/DinamicModel.png" width="400">
+
+
+
 ### Control System 
+
+
 ## R.O.S.
 ### Encodernode
 ### Imunode
