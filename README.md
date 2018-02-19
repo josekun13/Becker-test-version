@@ -88,7 +88,8 @@ the thesis "Desarrollo de un robot de dos ruedas dinámicamente estable"
 the document is in the ![documents folder](/documents).
 
 Dynamic model diagram in SimuLink is as follows.
-<img src="/Images/DinamicModel.png" width="400">
+
+<img src="/Images/DinamicModel.png" width="600">
 
 
 
