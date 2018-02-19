@@ -92,9 +92,12 @@ Dynamic model diagram in SimuLink is as follows.
 <img src="/Images/DinamicModel.png" width="600">
 
 
-
 ### Control System 
+The control system is an modification of ac classic PID controller,
+this version only use the integrative part in one of the inputs, is 
+called PD+I.
 
+<img src="/Images/pdpi.png" width="600">
 
 ## R.O.S.
 ### Encodernode
@@ -103,3 +106,4 @@ Dynamic model diagram in SimuLink is as follows.
 ### Motornode
 ## Possible Improvements
 ## Notes
+## Operation
