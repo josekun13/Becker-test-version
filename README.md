@@ -98,6 +98,16 @@ this version only use the integrative part in one of the inputs, is
 called PD+I.
 
 <img src="/Images/pdpi.png" width="600">
+  
+In simulation the control was robust enough to compensate perturbances 
+of 30° in inclination. The experiments in with the prototipe show
+an enormous diference, the real robot can compensare only 4° 
+disturbances, this fluctuation is because the suposition of a linear
+behaivor.
+
+*Control model and dynamic model simulations are in 
+ ![simulations folder](/simulations)*
+  
 
 ## R.O.S.
 ### Encodernode
