@@ -116,9 +116,21 @@ Becker use R.O.S. Indigo, the node diagram is as follow.
 
 
 ### Encodernode
+This node read the signals of motor's encoders and calculate the angle 
+of each motor with a sample rate of 10,700 times per second.
+
 ### Imunode
+Imunode obtains the measurements of the 3 axis accelerometer and 
+gyroscope and use a complementary filter to calculate the angle. 
+
 ### Controlnode
+The contolnode is the main node of Becker, it read the messages of the
+encodernode and imunode asynchronously, calculate the derivative and
+integrative values and generate the control signal for each wheel.
+
 ### Motornode
+Motornode generate the PWM and direction signals for the motor drivers.
+
 ## Possible Improvements
 ## Notes
 ## Operation
