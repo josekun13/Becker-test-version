@@ -142,6 +142,7 @@ These points are better explained in the ![thesis](/documents).
 
 ## Videos
 In this links are some videos of Becker working.
+
 [Becker video](https://youtu.be/0lUVMNjOlis)
 
 ## Operation
