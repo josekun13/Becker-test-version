@@ -146,3 +146,19 @@ In this links are some videos of Becker working.
 [Becker video](https://youtu.be/0lUVMNjOlis)
 
 ## Operation
+These is boot sequence of Becker.
+
+l. Put Becker in vertical position, ( this is because the IMU need this
+angle as reference).
+l. Start the roscore (note: the next steps need to be made in as super
+user).
+l. Start the encodernode.
+l. Start the imunode.
+l. Start the motornode.
+l. Start the controlnode.
+l. Release Becker  :smirk_cat: .
+ 
+
+
+
+
