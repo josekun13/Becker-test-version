@@ -132,5 +132,16 @@ integrative values and generate the control signal for each wheel.
 Motornode generate the PWM and direction signals for the motor drivers.
 
 ## Possible Improvements
-## Notes
+The next list shows improvements that help the Becker's performance
+
+* An adaptative control system.
+* Externar microcontroller to generate PWM signals.
+* A new CPU version.
+
+These points are better explained in the ![thesis](/documents).
+
+## Videos
+In this links are some videos of Becker working.
+[Becker video](https://youtu.be/0lUVMNjOlis)
+
 ## Operation
