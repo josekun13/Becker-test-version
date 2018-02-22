@@ -112,7 +112,7 @@ behaivor.
 ## R.O.S.
 Becker use R.O.S. Indigo, the node diagram is as follow.
 
-<img src="/Images/g2.pdf" width="400">
+<img src="/Images/g2.jpeg" width="400">
 
 
 ### Encodernode
