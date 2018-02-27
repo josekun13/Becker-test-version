@@ -106,7 +106,7 @@ disturbances, this fluctuation is because the suposition of a linear
 behaivor.
 
 *Control model and dynamic model simulations are in 
- ![simulations folder](/simulations)*
+ ![simulations folder](/simulations).*
   
 
 ## R.O.S.
@@ -114,6 +114,7 @@ Becker use R.O.S. Indigo, the node diagram is as follow.
 
 <img src="/Images/g2.jpeg" width="400">
 
+*The R.O.S. workspace is in the folder ![catkin ws](/catkin_ws).*
 
 ### Encodernode
 This node read the signals of motor's encoders and calculate the angle 
