@@ -74,7 +74,7 @@ their logic circuit work at 5V, they are supply by a buck type source.
 Optocoupler array function is to isolate the motor circuit and the 
 control circuit.
 
-*Electronic diagrams are in the ![diagrams folder](/diagrams)*
+*Electronic diagrams are in the ![diagrams folder](/diagrams).*
 
 ## Simulation
 Becker dynamic model simulation was made using matlab.
@@ -124,7 +124,7 @@ Imunode obtains the measurements of the 3 axis accelerometer and
 gyroscope and use a complementary filter to calculate the angle. 
 
 ### Controlnode
-The contolnode is the main node of Becker, it read the messages of the
+The controlnode is the main node of Becker, it read the messages of the
 encodernode and imunode asynchronously, calculate the derivative and
 integrative values and generate the control signal for each wheel.
 
@@ -132,7 +132,7 @@ integrative values and generate the control signal for each wheel.
 Motornode generate the PWM and direction signals for the motor drivers.
 
 ## Possible Improvements
-The next list shows improvements that help the Becker's performance
+The next list shows improvements that help the Becker's performance:
 
 * An adaptative control system.
 * Externar microcontroller to generate PWM signals.
@@ -143,16 +143,16 @@ These points are better explained in the ![thesis](/documents).
 ## Videos
 In this links are some videos of Becker working.
 
-[Becker video](https://youtu.be/0lUVMNjOlis)
+[Becker video](https://youtu.be/0lUVMNjOlis).
 
 ## Operation
-These is boot sequence of Becker.
+These is the boot sequence of Becker.
 
 1. Put Becker in vertical position, ( this is because the IMU need this
 angle as reference).
 
 1. Start the roscore (note: the next steps need to be made in as super
-user).
+user):
 
 1. Start the encodernode.
 
