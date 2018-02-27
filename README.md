@@ -41,7 +41,7 @@ they are made of stainless steel with a length  of 12cm.
 *3d models and planes are in the ![models folder](/models)*
  
 ## Electronics
-Electronic system is composed by three main parts 
+Electronic system is composed by three main parts:
 * Power Source
 * Control Unit
 * Power Stage
@@ -60,7 +60,7 @@ The motors battery is a 5000mAh LiPo with an output of 11.1v and a
 maximum discharge rate of 50A.
 
 ### Control Unit  :computer:
-Becker use a Raspberry Pi B2+ as CPU, IMU are communicated using I²C, 
+Becker use a Raspberry Pi 2B+ as CPU, IMU are communicated using I²C, 
 Encoders, PWM and direction pins of the motor drivers are conected to 
 GPIOs of the CPU (throught optocouplers).
 
